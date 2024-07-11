@@ -1,0 +1,42 @@
+footer {
+    display: flex;
+    justify-content: space-around;
+    height: 22rem;
+    min-width: 600px;
+    border-top: 2px solid #285f1e;
+    background: linear-gradient(#02487c, #172b44);
+    margin-top: 15rem;
+}
+
+.foot {
+    margin-top: 45px;
+}
+
+.foot h4{
+    padding-bottom: 7px;
+    border-bottom: 1px solid antiquewhite;
+    font-size: 25px;
+    color: antiquewhite;
+}
+
+.politicas {
+    text-align: center;
+    align-items: center;
+    line-height: 15rem;
+}
+
+.foot ul li {
+    padding: 15px;
+    align-items: center;
+    text-align: center;
+}
+
+.foot ul li i {
+    font-size: 30px;
+    color: antiquewhite;
+}
+
+.politicas a {
+    color: antiquewhite;
+    font-size: 25px;
+}

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a2dd6045c4.js"></script>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/hoteles.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/carousel.css">
+    <title>Mundo Viajero</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img class="logo" src="Assets/mundo-viajero-logo.png" alt="logo">
+        </div>
+        <div class="title">
+            <h1>Planea tu proximo destino</h1>
+        </div>
+        <div id="sesion">
+            <i class="fa-regular fa-user"></i>
+        </div>
+        <div id="login">
+            <div class="login-content">
+                <span id="close-sesion" onclick="closeSesion()">&#10006;</span>
+                <h4>Inicio de Sesión</h4>
+                <form class="input-sesion">
+                    <input class="form-sesion" type="text" placeholder="Usuario">
+                    <input class="form-sesion" type="password" placeholder="Contraseña">
+                    <div class="boton-sesion">
+                        <input class="boton-sumbit" type="submit" value="Iniciar Sesión">
+                    </div>
+                    <div class="boton-register">
+                        <h5>¿Todavia no estas registrado? <a href="Register.html">Crea tu cuenta</a>
+                        </h5>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><i class="fa-solid fa-house"></i><a href="index.html">Inicio</a></li>
+            <li><i class="fa-solid fa-hotel"></i><a href="hoteles.html"> Hoteles</a></li>
+            <li><i class="fa-solid fa-briefcase-medical"></i><a href="nosotros.html">Nosotros</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="description">
+            <div class="intro">
+                <h4>¡Bienvenidos a nuestra selección exclusiva de hoteles! Porque, claro, no cualquier
+                    lugar es digno de ti.</h4>
+                <h4>Lujo y Confort</h4>
+                <p>Nuestros hoteles no solo ofrecen habitaciones, ofrecen experiencias. Desde suites lujosas con vistas
+                    impresionantes hasta habitaciones acogedoras con todo lo que necesitas para sentirte como en casa. No
+                    importa si tu destino es una vibrante metrópolis o una tranquila playa escondida, tenemos el lugar
+                    perfecto para que descanses y te mimes como te mereces.</p>
+            </div>
+            <div class="carosuel-section">
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="Assets/servicios-1.jpg" alt="Imagen 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Assets/servicios-2.jpg" alt="Imagen 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Assets/servicios-4.jpg" alt="Imagen 3">
+                        </div>
+                    </div>
+                    <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
+                    <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
+                </div>
+            </div>
+            <div class="intro">
+                <h4>Ubicación Estratégica</h4>
+                <p>Sabemos que la ubicación es clave. Por eso, nuestros hoteles están situados en los puntos más
+                estratégicos y convenientes. Así podrás disfrutar de fácil acceso a las principales atracciones,
+                restaurantes y opciones de entretenimiento. Todo a solo unos pasos de tu puerta.</p>
+            </div>
+            <div class="hoteles">
+                <div class="card-hotel">
+                    <div class="image"> <img src="Assets/hotel2.webp" alt="Hotel El Solar"></div>
+                    <p class="name">El Solar</p>
+                    <div class="description-hotel">Mansión restaurada con encanto antiguo y comodidades modernas, ofrece
+                        una
+                        estancia sofisticada y conveniente en el centro de la ciudad.</div>
+                    <div class="galery"></div>
+                </div>
+                <div class="card-hotel">
+                    <div class="image"> <img src="Assets/hotel3.webp" alt="Hotel Aurora"></div>
+                    <p class="name">Hotel Aurora</p>
+                    <div class="description-hotel">Elegante hotel colonial en el corazón histórico de la ciudad, ideal
+                        para
+                        explorar sus atracciones culturales y gastronómicas.</div>
+                    <div class="galery"></div>
+                </div>
+                <div class="card-hotel">
+                    <div class="image"> <img src="Assets/hotel5.webp" alt="Hotel Las Cañitas"></div>
+                    <p class="name">Las Cañitas</p>
+                    <div class="description-hotel">
+                        Hotel céntrico con diseño elegante, ideal para quienes buscan comodidad y explorar la vida
+                        nocturna
+                        de la ciudad.
+                    </div>
+                    <div class="galery"></div>
+                </div>
+                <div class="card-hotel">
+                    <div class="image"> <img src="Assets/hotel6.webp" alt="Hotel Brisas del Mar"></div>
+                    <p class="name">Hotel Brisas del Mar</p>
+                    <div class="description-hotel">Refugio tranquilo junto al mar, perfecto para escapar del estrés
+                        diario y
+                        disfrutar del sol y la playa.</div>
+                    <div class="galery"></div>
+                </div>
+                <div class="card-hotel">
+                    <div class="image"> <img src="Assets/hotel1.webp" alt="Hotel El Refugio"></div>
+                    <p class="name">El Refugio</p>
+                    <div class="description-hotel">Santuario natural rodeado de paisajes impresionantes, ofrece una
+                        experiencia de desconexión y aventura en la naturaleza.</div>
+                    <div class="galery"></div>
+                </div>
+            </div>
+            <div class="opinion-verificada">
+                <h4>Opiniones Verificadas</h4>
+                <p>No tienes que confiar solo en nuestra palabra. Cada hotel cuenta con reseñas verificadas de huéspedes
+                    anteriores, así puedes estar seguro de que estás tomando la mejor decisión. ¡Te prometemos que no hay
+                    trucos!</p>
+            </div>
+            <section class="opiniones">
+                <div class="opinion">
+                    <h3 class="hotel-reseña">El Solar [4.3]</h3>
+                    <h5 class="nombre-huesped">Velazquez Luca</h5>
+                    <blockquote class="opinion-huesped">"Habitaciones limpias y cómodas, personal amable. La estancia
+                        fue verdaderamente placentera. 😊"</blockquote>
+                    <p class="descripcion"><i class="fa-regular fa-heart"></i>Viajó en pareja</p>
+                </div>
+                <div class="opinion">
+                    <h3 class="hotel-reseña">Hotel Aurora [4.9]</h3>
+                    <h5 class="nombre-huesped">Allende Bruno</h5>
+                    <blockquote class="opinion-huesped">"Servicio excepcional y vistas impresionantes. ¡Un lugar
+                        perfecto para relajarse y disfrutar! "</blockquote>
+                    <p class="descripcion"><i class="fa-solid fa-people-roof"></i>Viajó en familia</p>
+                </div>
+                <div class="opinion">
+                    <h3 class="hotel-reseña">El Refugio [4.2]</h3>
+                    <h5 class="nombre-huesped">Benavidez Paola</h5>
+                    <blockquote class="opinion-huesped">"Ambiente acogedor y muy tranquilo. Un refugio encantador lejos
+                        del bullicio."</blockquote>
+                    <p class="descripcion"><i class="fa-regular fa-heart"></i>Viajó en pareja</p>
+                </div>
+                <div class="opinion">
+                    <h3 class="hotel-reseña">Las Cañitas [3.9]</h3>
+                    <h5 class="nombre-huesped">Tesone Valentin</h5>
+                    <blockquote class="opinion-huesped">"Desayuno delicioso y ubicación perfecta. Ideal para explorar la
+                        ciudad. "</blockquote>
+                    <p class="descripcion"><i class="fa-solid fa-beer-mug-empty"></i>Viajó con amigos</p>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <div class="foot contacto">
+            <h4>Contacto</h4>
+            <ul>
+                <li><a class="social-link" href="#"><i class="fa-solid fa-envelope"></i></a></li>
+                <li><a class="social-link" href="#"><i class="fab fa-whatsapp"></i></a></li>
+                <li><a class="social-link" href="#"><i class="fa-brands fa-telegram"></i></a></li>
+            </ul>
+        </div>
+        <div class="foot redes">
+            <h4>Siguenos</h4>
+            <ul>
+                <li><a class="social-link" href="https://www.facebook.com/" target="_blank"><i
+                            class="fab fa-facebook-f"></i></a></li>
+                <li><a class="social-link" href="https://www.instagram.com/" target="_blank"><i
+                            class="fab fa-instagram"></i></a></li>
+                <li><a class="social-link" href="https://twitter.com/" target="_blank"><i
+                            class="fa-brands fa-x-twitter"></i></a></li>
+            </ul>
+        </div>
+        <div class="foot politicas">
+            <a href="#">Politicas de Privacidad</a>
+        </div>
+    </footer>
+    <script src="js/carousel.js"></script>
+    <script defer src="js/scripts.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

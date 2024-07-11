@@ -1,0 +1,29 @@
+:root {
+    --color-primario: #172b44;
+    --color-secundario: #02487c;
+    --color-terciario: #42b3eb;
+    --color-cuaternario: #c0c6c9;
+    --color-quintario: #285f1e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom, var(--color-cuaternario), var(--color-terciario));
+}
+
+.container {
+    gap: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 35px;
+}   

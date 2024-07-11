@@ -1,0 +1,40 @@
+.carosuel-section {
+    width: 100%;
+    min-width: 600px;
+    height: 20rem;
+    margin: 40px 0;
+    align-content: center;
+}
+
+.carousel {
+    position: relative;
+    margin: auto; /* Esto centra el div horizontalmente */
+}
+
+.carousel {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    min-width: 350px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.carousel-inner {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-item {
+    margin: 3   5px;
+    box-sizing: border-box;
+} 
+
+.carousel-item img {
+    display: flex;
+    border-radius: 30px;
+    object-fit: cover;
+    height: 360px;
+    width: 800px;
+    padding: 15px;
+}

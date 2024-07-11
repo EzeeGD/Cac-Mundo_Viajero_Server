@@ -1,0 +1,63 @@
+.carosuel-section {
+  margin: 10rem;
+}
+
+.carousel {
+    position: relative;
+    margin: auto; /* Esto centra el div horizontalmente */
+}
+
+.carousel {
+    border: black 1px solid;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    min-width: 350px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .carousel:hover {
+    transform: scale(1.5);
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    display: flex;
+    border-radius: 10px;
+    object-fit: cover;
+    height: 260px;
+    width: 500px;
+  }
+  
+  .carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .carousel-control.prev {
+    left: 10px;
+  }
+  
+  .carousel-control.next {
+    right: 10px;
+  }

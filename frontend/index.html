@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a2dd6045c4.js"></script>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/styleFilters.css">
+    <link rel="stylesheet" href="css/Carrousel.css">
+    <title>Mundo Viajero</title> 
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img class="logo" src="Assets/mundo-viajero-logo.png" alt="logo">
+        </div>
+        <div class="title">
+            <h1>Planea tu proximo destino</h1>
+        </div>
+        <div id="sesion">
+            <i class="fa-regular fa-user"></i>
+        </div>
+        <div id="login">
+            <div class="login-content">
+                <span id="close-sesion" onclick="closeSesion()">&#10006;</span>
+                <h4>Inicio de Sesión</h4>
+                <form class="input-sesion">
+                    <input class="form-sesion" type="text" placeholder="Usuario">
+                    <input class="form-sesion" type="password" placeholder="Contraseña">
+                    <div class="boton-sesion">
+                        <input class="boton-sumbit" type="submit" value="Iniciar Sesión">
+                    </div>
+                    <div class="boton-register">
+                        <h5>¿Todavia no estas registrado? <a href="Register.html">Crea tu cuenta</a>
+                        </h5>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><i class="fa-solid fa-house"></i><a href="index.html">Inicio</a></li>
+            <li><i class="fa-solid fa-hotel"></i><a href="hoteles.html"> Hoteles</a></li>
+            <li><i class="fa-solid fa-briefcase-medical"></i><a href="nosotros.html">Nosotros</a></li>
+        </ul>
+    </nav>
+    <div class="carosuel-section">
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="Assets/barilo.jpg" alt="Imagen 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="Assets/glaciar.jpg" alt="Imagen 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="Assets/cataratas.jpg" alt="Imagen 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="Assets/mardel.jpg" alt="Imagen 4">
+                </div>
+                <div class="carousel-item">
+                    <img src="Assets/guanaco-lama-guanicoe-parque-nacional-torres-paine_181624-49460.avif" alt="Imagen 5">
+                </div>
+                <div class="carousel-item">
+                    <img src="Assets/humahuaca.jpg" alt="Imagen 6">
+                </div>
+                <div class="carousel-item">
+                    <img src="Assets/region-noa-1-1.jpg" alt="Imagen 7">
+                </div>
+                <div class="carousel-item">
+                    <img src="Assets/trevelin-fb-1.jpg" alt="Imagen 8">
+                </div>
+                <div class="carousel-item">
+                    <img src="Assets/Salinas-in-Argentina-scaled.webp" alt="Imagen 8">
+                </div>
+                <div class="carousel-item">
+                    <img src="Assets/noa_principal.webp" alt="Imagen 8">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="button-filter">
+        <input type="search" placeholder="¿A dónde vas?" class="cards-filter">
+    </div>
+        <section class="container" id="cardContainer">
+                <!-- viajes -->
+        </section>
+    <footer>
+        <div class="foot contacto">
+            <h4>Contacto</h4>
+            <ul>
+                <li><a class="social-link" href="#"><i class="fa-solid fa-envelope"></i></a></li>
+                <li><a class="social-link" href="#"><i class="fab fa-whatsapp"></i></a></li>
+                <li><a class="social-link" href="#"><i class="fa-brands fa-telegram"></i></a></li>
+            </ul>
+        </div>
+        <div class="foot redes">
+            <h4>Siguenos</h4>
+            <ul>
+                <li><a class="social-link" href="https://www.facebook.com/" target="_blank"><i
+                            class="fab fa-facebook-f"></i></a></li>
+                <li><a class="social-link" href="https://www.instagram.com/" target="_blank"><i
+                            class="fab fa-instagram"></i></a></li>
+                <li><a class="social-link" href="https://twitter.com/" target="_blank"><i
+                            class="fa-brands fa-x-twitter"></i></a></li>
+            </ul>
+        </div>
+        <div class="foot politicas">
+            <a href="#">Politicas de Privacidad</a>
+        </div>
+    </footer>
+    <script src="js/emprendimientos.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/search.js"></script>
+    <script defer src="js/scripts.js"></script>
+    <script src="js/carrousel.js"></script>
+</body>
+</html>
