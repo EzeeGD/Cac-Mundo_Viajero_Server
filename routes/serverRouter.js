@@ -72,9 +72,9 @@ router.post("/", (req, res) => {
 // PUT /api/paquetes/:idPaquete
 router.put("/:idPaquete", (req, res) => {
     const paqueteId = req.params.idPaquete;
-    const { Destino_ID, hotel_ID, precioPaquete, cantDias } = req.body;
-    const sql = 'UPDATE paquete SET Destino_ID=?, hotel_ID=?, precioPaquete=?, cantDias=? WHERE idPaquete=?';
-    db.query(sql, [Destino_ID, hotel_ID, precioPaquete, cantDias, paqueteId], (err, results) => {
+    const { destino_ID, hotel_ID, precioPaquete, cantDias } = req.body;
+    const sql = 'UPDATE paquete SET destino_ID=?, hotel_ID=?, precioPaquete=?, cantDias=? WHERE idPaquete=?';
+    db.query(sql, [destino_ID, hotel_ID, precioPaquete, cantDias, paqueteId], (err, results) => {
         if (err) {
             return res.status(500).json({ error: "Error al actualizar paquete en la base de datos" });
         }
@@ -85,7 +85,7 @@ router.put("/:idPaquete", (req, res) => {
             mensaje: "Paquete actualizado correctamente",
             paquete: {
                 idPaquete: paqueteId,
-                Destino_ID,
+                destino_ID,
                 hotel_ID,
                 precioPaquete,
                 cantDias
