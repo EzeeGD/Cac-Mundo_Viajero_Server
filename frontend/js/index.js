@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <p>${paquete.descripcionDestino}</p>
             </div>
             <div class="card-dias">
-                <p>${paquete.cantDias} días</p>
+                <p>${paquete.cantDias}</p>
             </div>
             <div class="card-hotel">
                 <p>${paquete.nombreHoteles}</p>
